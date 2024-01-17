@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#define MAX_AGE = 100
+#define MIN_AGE = 1
+#define MAJEUR = 18
+
 void afficher_somme(int x)
 {
     printf("La somme est de : %d\n", x);
@@ -11,16 +15,25 @@ int calcule_somme(int x, int y)
     return x + y;
 }
 
+int est_majeur(int age)
+{
+    if(age>=18 & age < 100)
+    return 1;
+else if(age <= 17 & age > 0)
+    return 0;
+else 
+    return 0;
+}
+
 void afficher_age(int age)
 {
-    if (age >= 18)
-    {
-        printf("Vous etes majeur\n");
-    }
+    if (est_majeur(age) == 1)
+        printf("%d : majeur\n", age);
+    else if (est_majeur(age)== 0)
+        printf("%d ; mineur\n", age);
     else
-    {
-        printf("Vous n'etes pas majeur\n");
-    }
+        printf("%d : Erreur\n", age");
+
 }
  
 int main()
