@@ -78,6 +78,14 @@ int est_impaire(int x)
     return x % 2;
 }
 
+int x = 0;
+{
+while(x <= 10)
+    printf("%d\n, x");
+    x++;
+}
+
+
 int main()
 {
     
