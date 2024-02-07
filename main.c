@@ -178,6 +178,6 @@ int main()
     
     multiple(5,30);
 
-    printf("La somme de 3 = %d\n" , sum(3));
+    printf("La somme de 3 = %d\n" , somme(3));
 
 }
