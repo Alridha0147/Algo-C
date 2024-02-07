@@ -129,6 +129,20 @@ afficher_nbres_premiers(int x)
         return x;
     }
 }
+
+int somme (int n)
+{
+    int sum = 0;
+    int i = 0;
+
+    while(i<=n) 
+    {
+        sum = sum + i;
+        i = i + 1;
+    }
+    return sum;
+}
+
 int main()
 {
     int a = 11;
@@ -164,6 +178,6 @@ int main()
     
     multiple(5,30);
 
-
+    printf("La somme de 3 = %d\n" , sum(3));
 
 }
