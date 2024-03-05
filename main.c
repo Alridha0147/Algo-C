@@ -143,6 +143,14 @@ int somme (int n)
     return sum;
 }
 
+int factorielle (int n)
+{
+    if (n > 0)
+        return n * factorielle(n - 1);
+    else 
+        return 1;
+}
+
 int main()
 {
     int a = 11;
