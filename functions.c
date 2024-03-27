@@ -58,28 +58,73 @@ int est_plus_petit(int x, int y)
         return 0;
 }
 
+ // Compare si x == y
+int est_egal(int x, int y)
+{
+    if (est_plus_grand(x,y) == 0 && est_plus_petit(x,y) == 0)
+        return 1;
+}
 
+// Renvoie la plus grande valeur entre x et y
+int le_plus_grand(int x, int y)
+{
+    if(est_plus_grand(x,y)== 1)
+        return x;
+    else
+        return y;
+}
 
+// Renvoi la plus petite valeur entre x et y
+int le_plus_petit(int x, int y)
+{
+    if(est_plus_petit(x,y)== 1)
+        return x;
+    else
+        return y;
+}// Renvoi la plus petite valeur entre x et y
+int le_plus_petit(int x, int y)
+{
+    if(est_plus_petit(x,y)== 1)
+        return x;
+    else
+        return y;
+}
 
+int est_impaire(int x)
+{
+    return x % 2;
+}
 
+int multiple(int x, int y)
+{
+    int a = 0;
+    while(a <= y)
+    {
+        printf("%d\n", a);
+        a += x;
+    }
+}
 
+int somme (int n)
+{
+    int sum = 0;
+    int i = 0;
 
+    while(i<=n) 
+    {
+        sum = sum + i;
+        i = i + 1;
+    }
+    return sum;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int factorielle (int n)
+{
+    if (n > 0)
+        return n * factorielle(n - 1);
+    else 
+        return 1;
+}
 
 void afficherDepartement(int t[], int len)
 {
