@@ -5,7 +5,7 @@ CFLAGS = -Wall
 LDFLAGS = -lm
 
 # Règle pour la cible "mon_programme"
-mon_programme: main.o fonctions.o
+mon_programme: main.o functions.o
 	$(CC) $(CFLAGS) -o mon_programme main.o functions.o $(LDFLAGS)
 
 # Règle pour la cible "main.o"
@@ -14,7 +14,7 @@ main.o: main.c
 
 # Règle pour la cible "functions.o"
 functions.o: functions.c
-	$(CC) $(CFLAGS) -c functions.c -o functions.o
+	$(CC) $(CFLAGS) -c functions.c 
 
 # Règle pour nettoyer les fichiers objets et l'exécutable
 clean:

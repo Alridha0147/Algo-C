@@ -27,10 +27,9 @@ int somme (int n);
 
 int factorielle (int n);
     
+int length(int t[]);
+
 void afficherDepartement(int t[], int len);
-
-int lenght(int t[]);
-
 
 int add_value(int t[]);
 

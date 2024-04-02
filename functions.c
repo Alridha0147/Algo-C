@@ -81,13 +81,6 @@ int le_plus_petit(int x, int y)
         return x;
     else
         return y;
-}// Renvoi la plus petite valeur entre x et y
-int le_plus_petit(int x, int y)
-{
-    if(est_plus_petit(x,y)== 1)
-        return x;
-    else
-        return y;
 }
 
 int est_impaire(int x)
@@ -137,7 +130,7 @@ void afficherDepartement(int t[], int len)
 }
 
 
-int lenght(int t[])
+int length(int t[])
 {
     int len = 0;
     for(int i = 0; t[i] != '\0'; i++){
@@ -147,13 +140,14 @@ int lenght(int t[])
 }
 
 
-int add_value(int t[]){
+int add_value(int t[])
+
+{
    
     int x;
-    for(int i = 0; i < len(t) && t[i] != '\0'; i = i+1){
-       
-
-
+    for(int i = 0; i < length(t) && t[i] != '\0'; i = i+1)
+    
+    {
         printf("Type a number : \n");
 
 
@@ -163,12 +157,15 @@ int add_value(int t[]){
         printf("Your number is : %d\n", x);
 
 
+    
+
+
+    t[length(t)]  = x;
     }
 
 
-    t[len(t)]  = x;
-    t[len(t)+1] = '\0';
+    t[length(t)+1] = '\0';
 
+    //afficherDepartement(t, sizeof(t) / sizeof(t[0]));
 
-    afficherDepartement(t, sizeof(t) / sizeof(t[0]));
 }
