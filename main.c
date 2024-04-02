@@ -26,4 +26,6 @@ int main()
    
     printf("\n");
 
+    recherche_v(aura, 45);
+
 }

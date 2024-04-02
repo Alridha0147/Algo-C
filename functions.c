@@ -3,6 +3,7 @@
 #define MAX_AGE 100
 #define MIN_AGE 0
 #define MAJEUR 18
+#define TMAX 100
 
 // Afficher un résultat
 void afficher_resultat(int x)
@@ -166,6 +167,21 @@ int add_value(int t[])
 
     t[length(t)+1] = '\0';
 
-    //afficherDepartement(t, sizeof(t) / sizeof(t[0]));
+    afficherDepartement(t, sizeof(t) / sizeof(t[0]));
 
+}
+
+int recherche_v(int t[TMAX], int v)
+{
+
+    printf("Quel département recherchez-vous? \n");
+
+    scanf("%d" , &v);
+    
+    for (int i = 0; i < TMAX ; i++)
+    {
+        if (t[i] == v)
+            return 1;
+    }
+    return 0;
 }
