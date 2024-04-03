@@ -24,7 +24,7 @@ int main()
 
 
 
-    printf("la liste des départements de la région Ile-de-France sont :");
+    printf("Les départements de la région Ile-de-France sont :");
    
     afficherDepartement( ileDeFrance, length(ileDeFrance));
 

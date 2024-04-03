@@ -134,7 +134,8 @@ void afficherDepartement(int t[], int len)
 int length(int t[])
 {
     int len = 0;
-    for(int i = 0; t[i] != '\0'; i++){
+    for(int i = 0; t[i] != '\0'; i++)
+    {
         len ++;
     }
     return len;
@@ -166,7 +167,5 @@ int add_value(int t[])
 
 
     t[length(t)+1] = '\0';
-
-    afficherDepartement(t, sizeof(t) / sizeof(t[0]));
 
 }
