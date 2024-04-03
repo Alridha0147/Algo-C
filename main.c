@@ -22,8 +22,6 @@ int main()
     int Aura[] = {1, 3, 4, 15, 26, 38, 42, 43, 63, 73, 74};
 
 
-
-
     printf("Les départements de la région Ile-de-France sont :");
    
     afficherDepartement( ileDeFrance, length(ileDeFrance));

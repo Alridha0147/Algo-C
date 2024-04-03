@@ -32,6 +32,6 @@ int length(int t[]);
 
 void afficherDepartement(int t[], int len);
 
-int add_value(int t[]);
+int ajouter_departement(int t[]);
 
 #endif

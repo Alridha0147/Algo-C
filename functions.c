@@ -142,7 +142,7 @@ int length(int t[])
 }
 
 
-int add_value(int t[])
+int ajouter_departement(int t[])
 
 {
    
