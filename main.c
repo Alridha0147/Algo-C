@@ -5,9 +5,11 @@ int main()
 {
 
     printf("Les régions françaises sont : Aura, BourgFC, Bre, CenVdL, Corse, GrdEst, HdF, ileDeFrance, Norm, NA, Occi, PdlL, PACA \n");
+    
+    //Création des tableaux régions 
 
-
-    int ileDeFrance[] = {75, 77, 78, 91, 92 ,93, 94, 95};  //création d'un tableau
+    int ileDeFrance[] = {75, 77, 78, 91, 92 ,93, 94, 95};  
+    int Aura[] = {1, 3, 4, 15, 26, 38, 42, 43, 63, 73, 74};
     int BourgFC[] = {};
     int Bre[] = {};
     int CenVdL[] = {};
@@ -19,12 +21,11 @@ int main()
     int Occi[] = {};
     int PdlL[] = {};
     int PACA[] = {};
-    int Aura[] = {1, 3, 4, 15, 26, 38, 42, 43, 63, 73, 74};
 
 
-    printf("Les départements de la région Ile-de-France sont :");
+    printf("Quelle région souhaitez-vous afficher ? \n");
    
-    afficherDepartement( ileDeFrance, length(ileDeFrance));
+    afficherDepartement(ileDeFrance,sizeof(ileDeFrance[0]));
 
 
     printf("\n");

@@ -123,7 +123,8 @@ int factorielle (int n)
 void afficherDepartement(int t[], int len)
 {
     int i = 0;
-    for(int i = 0; i < len; i++){
+    for(int i = 0; i < len; i++)
+    {
         printf("[%i] ", t[i]);
     }
 
@@ -140,7 +141,6 @@ int length(int t[])
     }
     return len;
 }
-
 
 int ajouter_departement(int t[])
 
