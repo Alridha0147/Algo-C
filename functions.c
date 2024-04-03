@@ -168,4 +168,6 @@ int add_value(int t[])
 
     t[length(t)+1] = '\0';
 
+ afficherDepartement(t, sizeof(t) / sizeof(t[0]));
+
 }
