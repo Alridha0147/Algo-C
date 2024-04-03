@@ -3,12 +3,23 @@
 
 int main()
 {
-    printf("Hello World ! \n");
+
+    printf("Les régions françaises sont : Aura, BourgFC, Bre, CenVdL, Corse, GrdEst, HdF, ileDeFrance, Norm, NA, Occi, PdlL, PACA \n");
+
 
     int ileDeFrance[] = {75, 77, 78, 91, 92 ,93, 94, 95};  //création d'un tableau
-
-
-    int aura[] = {1, 3, 4, 15, 26, 38, 42, 43, 63, 69, 73, 74};
+    int BourgFC[] = {};
+    int Bre[] = {};
+    int CenVdL[] = {};
+    int Corse[] = {};
+    int GrdEst[] = {};
+    int HdF[] = {};
+    int Norm[] = {};
+    int NA[] = {};
+    int Occi[] = {};
+    int PdlL[] = {};
+    int PACA[] = {};
+    int Aura[] = {1, 3, 4, 15, 26, 38, 42, 43, 63, 73, 74};
 
 
 
@@ -22,10 +33,8 @@ int main()
 
 
     printf("la liste des départements de la région Auvergne-Rhône-Alpes sont :");
-    afficherDepartement(aura, sizeof(aura) / sizeof(aura[0]));
+    afficherDepartement(Aura, sizeof(Aura) / sizeof(Aura[0]));
    
     printf("\n");
-
-    recherche_v(aura, 45);
 
 }

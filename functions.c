@@ -170,18 +170,3 @@ int add_value(int t[])
     afficherDepartement(t, sizeof(t) / sizeof(t[0]));
 
 }
-
-int recherche_v(int t[TMAX], int v)
-{
-
-    printf("Quel département recherchez-vous? \n");
-
-    scanf("%d" , &v);
-    
-    for (int i = 0; i < TMAX ; i++)
-    {
-        if (t[i] == v)
-            return 1;
-    }
-    return 0;
-}

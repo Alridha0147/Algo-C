@@ -34,6 +34,4 @@ void afficherDepartement(int t[], int len);
 
 int add_value(int t[]);
 
-int recherche_v(int t[TMAX], int v);
-
 #endif
